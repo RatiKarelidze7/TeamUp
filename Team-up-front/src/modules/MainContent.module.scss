@@ -6,21 +6,41 @@
   gap: 150px;
   margin-top:70px;
 
+  @media screen and (max-width: 431px) {
+    max-width: 430px;
+    display: grid;
+    gap: 50px;
+  }
+
   .left-side {
     display: grid;
     width: 600px;
 
     p {
       color: #666666;
+      @media screen and (max-width: 431px) {
+        font-size: 14px;
+        width: 250px;
+      }
     }
 
     h1 {
       font-size: 3rem;
+      
+      @media screen and (max-width: 431px) {
+        font-size: 1.8rem;
+        width: 250px;
+      }
     }
 
     .result-side {
       display: flex;
       gap: 50px;
+
+      @media screen and (max-width: 431px) {
+        display: grid;
+        gap: 20px;
+      }
 
       h2 {
         font-size: 2rem;
@@ -63,17 +83,25 @@
       }
     }
 
-
   }
 
   .right-side {
     width: 600px;
+
+    @media screen and (max-width: 431px) {
+      width: 250px;
+    }
 
     .right-side_img {
       width: 650px;
       height: 450px;
       background-color: #e1e1e1;
       border-radius: 10px;
+
+      @media screen and (max-width: 431px) {
+        width: 250px;
+        height: 300px;
+      }
     }
   }
 
