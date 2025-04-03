@@ -31,7 +31,7 @@
 
     h3 {
         font-size: 1.5rem;
-        color: #1e293b;
+        color: #bda21d;
         margin-bottom: 1.5rem;
         font-weight: 600;
     }
@@ -93,7 +93,7 @@
 
             &:focus {
                 outline: none;
-                border-color: #2563eb;
+                border-color: #efd135;
                 box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
             }
         }
@@ -108,8 +108,8 @@
     .filter-btn {
         width: 100%;
         padding: 1rem;
-        background: #2563eb;
-        color: white;
+        background-color: #efd135;
+        color: #000;
         border: none;
         border-radius: 8px;
         font-size: 1rem;
@@ -119,7 +119,7 @@
         margin-top: 1.5rem;
 
         &:hover {
-            background: #1d4ed8;
+            background-color: #bda21d;
             transform: translateY(-2px);
         }
     }
@@ -253,14 +253,14 @@
     .clear-filters {
         margin-top: 10px;
         padding: 8px 16px;
-        background-color: #4318d1;
-        color: white;
+        background-color: #efd135;
+        color: #000;
         border: none;
         border-radius: 5px;
         cursor: pointer;
 
         &:hover {
-            background-color: #210872;
+            background-color: #bda21d;
         }
     }
 }
@@ -297,7 +297,7 @@
 
             &:focus {
                 outline: none;
-                border-color: #4318d1;
+                border-color: #efd135;
             }
         }
 
@@ -320,12 +320,12 @@
                 transition: all 0.3s ease;
 
                 &[type="submit"] {
-                    background: #2563eb;
+                    background: #efd135;
                     color: white;
                     border: none;
 
                     &:hover {
-                        background: #1d4ed8;
+                        background: #efd135;
                     }
                 }
 
@@ -344,8 +344,8 @@
 }
 
 :root {
-    --primary: #2563eb;
-    --primary-hover: #1d4ed8;
+    --primary: #efd135;
+    --primary-hover: #bda21d;
     --bg: #f8fafc;
     --border: #e2e8f0;
     --text: #1e293b;
@@ -377,7 +377,7 @@
 
         p {
             font-weight: 600;
-            color: #2563eb;
+            color: #efd135;
         }
     }
 
@@ -396,7 +396,7 @@
                 -webkit-appearance: none;
                 width: 20px;
                 height: 20px;
-                background: #2563eb;
+                background: #efd135;
                 border-radius: 50%;
                 cursor: pointer;
                 border: none;
@@ -405,7 +405,7 @@
             &::-moz-range-thumb {
                 width: 20px;
                 height: 20px;
-                background: #2563eb;
+                background: #efd135;
                 border-radius: 50%;
                 cursor: pointer;
                 border: none;
@@ -543,8 +543,8 @@
 .submit-btn {
     width: 100%;
     padding: 12px;
-    background: #2563eb;
-    color: white;
+    background: #efd135;
+    color: #000;
     border: none;
     border-radius: 8px;
     font-size: 1rem;
@@ -554,7 +554,7 @@
     transition: all 0.3s ease;
 
     &:hover:not(:disabled) {
-        background: #1d4ed8;
+        background: #bda21d;
     }
 
     &:disabled {
@@ -601,8 +601,8 @@
 }
 
 .createButton {
-    background: #2563eb;
-    color: white;
+    background-color: #efd135;
+    color: #000;
     padding: 12px 24px;
     border: none;
     border-radius: 8px;
@@ -617,7 +617,7 @@
     transition: all 0.3s ease;
 
     &:hover {
-        background: #1d4ed8;
+        background-color: #bda21d;
     }
 }
 
@@ -693,12 +693,12 @@
         transition: all 0.3s ease;
 
         &:first-child {
-            background: #2563eb;
-            color: white;
+            background-color: #efd135;
+            color: #000;
             border: none;
 
             &:hover {
-                background: #1d4ed8;
+                background-color: #bda21d;
             }
         }
     }
@@ -719,12 +719,12 @@
         transition: all 0.3s ease;
 
         &:first-child {
-            background: #2563eb;
-            color: white;
+            background-color: #efd135;
+            color: #000;
             border: none;
 
             &:hover {
-                background: #1d4ed8;
+                background-color: #bda21d;
             }
         }
 
@@ -780,11 +780,11 @@
 
     &:hover {
         transform: translateY(-2px);
-        border-color: #2563eb;
+        border-color: #efd135;
     }
 
     &.selected {
-        border-color: #2563eb;
+        border-color: #bda21d;
         background: #f0f7ff;
     }
 }
@@ -831,7 +831,7 @@
     margin: 8px 0;
 
     p {
-        background:#2563eb;
+        background:#efd135;
         padding: 4px 8px;
         border-radius: 12px;
         font-size: 0.75rem;
@@ -900,7 +900,7 @@
         font-size: 0.8rem;
 
         &.status {
-            background: #2563eb;
+            background: #efd135;
             color: white;
             border: none;
         }
@@ -922,12 +922,12 @@
         summary {
             padding: 6px 0;
             cursor: pointer;
-            color: #2563eb;
+            color: #efd135;
             font-weight: 500;
             user-select: none;
 
             &:hover {
-                color: #1d4ed8;
+                color: #bda21d;
             }
         }
 
@@ -952,7 +952,7 @@
     margin-bottom: 30px;
     
     h4 {
-        color: #2563eb;
+        color: #efd135;
         font-size: 1.2rem;
         margin: 0 0 15px 0;
         padding-bottom: 10px;
@@ -1029,7 +1029,7 @@
 
     &:hover {
         transform: translateY(-2px);
-        border-color: #2563eb;
+        border-color: #efd135;
     }
 
     .aboutDev {
@@ -1076,7 +1076,7 @@
         margin: 8px 0;
 
         p {
-            background: #2563eb;
+            background: #d0ae04;
             padding: 4px 8px;
             border-radius: 12px;
             font-size: 0.75rem;
@@ -1097,8 +1097,8 @@
 .teamSelectButton {
     width: 100%;
     padding: 12px;
-    background: #2563eb;
-    color: white;
+    background: #efd135;
+    color: #000;
     border: none;
     border-radius: 8px;
     font-size: 1rem;
@@ -1108,7 +1108,7 @@
     transition: all 0.3s ease;
 
     &:hover {
-        background: #1d4ed8;
+        background: #bda21d;
         transform: translateY(-2px);
     }
 
@@ -1139,7 +1139,7 @@
         font-size: 1.1rem;
         margin-bottom: 15px;
         padding-bottom: 10px;
-        border-bottom: 2px solid #2563eb;
+        border-bottom: 2px solid #efd135;
     }
 
     textarea {
@@ -1154,7 +1154,7 @@
 
         &:focus {
             outline: none;
-            border-color: #2563eb;
+            border-color: #efd135;
             box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
         }
 
@@ -1210,5 +1210,54 @@
         padding: 10px 20px;
     }
 }
+
+.loadingSpinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top-color: #000;
+    animation: spin 1s ease-in-out infinite;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loadingOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.fullscreenSpinner {
+    width: 80px;
+    height: 80px;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top-color: #000;
+    animation: spin 1s ease-in-out infinite;
+    margin-bottom: 20px;
+}
+
+.loadingText {
+    font-size: 24px;
+    color: #333;
+    font-weight: 500;
+}
+
 
 

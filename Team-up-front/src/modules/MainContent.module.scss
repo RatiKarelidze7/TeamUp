@@ -1,8 +1,9 @@
 .main-container {
   display: flex;
   max-width: 1400px;
+  background-color: #fffaec;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 50px 20px;
   gap: 150px;
   margin-top:70px;
 
@@ -52,7 +53,7 @@
       gap: 15px;
 
       .blue-btn {
-        background-color: #4318d1;
+        background-color: #efd135;
         border: none;
         border-radius: 7px;
         width: 120px;
@@ -62,7 +63,7 @@
         transition: all 0.3s;
 
         &:hover {
-          background-color: #250e7e;
+          background-color: #bda21d;
         }
       }
 
@@ -101,6 +102,7 @@
       @media screen and (max-width: 431px) {
         width: 250px;
         height: 300px;
+        transform: translate(50px, 0);
       }
     }
   }

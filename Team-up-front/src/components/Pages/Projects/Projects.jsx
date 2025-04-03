@@ -11,6 +11,7 @@ const Projects = () => {
     const [showProjects, setShowProjects] = useState(true);
     const [projects, setProjects] = useState([]);
     const [showCreateForm, setShowCreateForm] = useState(false);
+    const [isSearching, setIsSearching] = useState(false);
     const [developers, setDevelopers] = useState({
         lowBudget: [],
         matching: [],
@@ -112,8 +113,14 @@ const Projects = () => {
             return;
         }
 
+        setIsSearching(true);
         try {
-            const response = await axios.get('http://localhost:5005/users');
+            // Start both the API call and the 5-second delay simultaneously
+            const [response] = await Promise.all([
+                axios.get('http://localhost:5005/users'),
+                new Promise(resolve => setTimeout(resolve, 5000)) // 5-second delay
+            ]);
+
             const allDevelopers = response.data.users.filter(user =>
                 user.selectedRole === "developer"
             );
@@ -243,6 +250,12 @@ const Projects = () => {
 
                 {showCreateForm && (
                     <div className={styles.modal} onClick={handleModalClick}>
+                        {isSearching && (
+                            <div className={styles.loadingOverlay}>
+                                <div className={styles.fullscreenSpinner}></div>
+                                <div className={styles.loadingText}>Finding Projects...</div>
+                            </div>
+                        )}
                         <div className={styles.modalContent} onClick={e => e.stopPropagation()}>
                             <h2 className={styles.modalTitle}>Create New Project</h2>
                             <div className={styles.modalBody}>

@@ -6,8 +6,11 @@
     display: flex;
     justify-content: start;
     padding-left: 40px;
+    transform: translate(50px, 0);
   }
 }
+
+
 
 .projects-side {
   display: grid;
@@ -37,10 +40,11 @@
 
   @media screen and (max-width: 431px) {
     max-width: 426px;
-    justify-content: start;
+    justify-content: center;
     grid-template-columns: repeat(1, 0fr);
     gap: 10px;
     padding: 25px;
+    transform: translate(-10px, 0);
   }
 
   .projects {

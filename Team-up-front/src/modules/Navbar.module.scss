@@ -5,7 +5,8 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #ffffff;
+  background-color: #000;
+  color: #fff;
   z-index: 1000;
   display: flex;
   width: 100%;
@@ -17,23 +18,12 @@ nav {
   font-family: "Roboto", serif;
   border-bottom: 1px solid #ececec;
 
-  @media only screen and (max-width: 431px) {
-    width: 70%;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
   div {
     display: flex;
     gap: 50px;
 
     .nav-logo {
-      color: #4318d1;
-      transform: translate(0, -8px);
-
-      @media only screen and (max-width: 431px) {
-          font-size: 18px;
-      }
+      width: 7.8rem;
     }
 
     ul {
@@ -49,7 +39,8 @@ nav {
       }
 
       li:hover {
-        background-color: #e5e5e5;
+        color: #000;
+        background-color: #fff;
       }
     }
 
@@ -74,6 +65,7 @@ nav {
 
         h3 {
           font-weight: 550;
+          color: #fff;
         }
       }
     }

@@ -135,7 +135,7 @@ const FindDevelopers = () => {
     };
 
     return (
-        <>
+        <div className={classes["body"]}>
             <Navbar />
             <br /><br />
             {errorMessage && (
@@ -303,7 +303,7 @@ const FindDevelopers = () => {
             )}
             <br/><br/><br/><br/><br/><br/>
             <Footer />
-        </>
+        </div>
     )
 }
 

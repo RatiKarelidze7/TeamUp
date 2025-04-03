@@ -3,6 +3,7 @@ import classes from "../../modules/Navbar.module.scss";
 import profileImg from "../../assets/Home-page-pics/profile-pic.jpg";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import logo from "../../assets/teamup-logo.jpg";
 
 const Navbar = () => {
     const [profileMenu, setProfileMenu] = useState(false);
@@ -65,7 +66,7 @@ const Navbar = () => {
     return (
         <nav>
             <div className={classes["nav-left"]}>
-                <h1 className={classes["nav-logo"]}>TeamUp</h1>
+                    <img src={logo} className={classes["nav-logo"]}/>
                 <div className={classes["hamburger"]} onClick={toggleMobileMenu}>
                     <span></span>
                     <span></span>
