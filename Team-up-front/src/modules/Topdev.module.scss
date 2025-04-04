@@ -2,11 +2,12 @@
   margin-bottom:60px;
 
   @media (max-width: 431px) {
+    width: 250px;
     font-size: 28px;
     display: flex;
     justify-content: start;
     padding-left: 40px;
-    transform: translate(60px, 0);
+    transform: translate(-20px, 0);
   }
 }
 

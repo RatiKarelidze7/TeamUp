@@ -59,7 +59,7 @@
 
 .modal-content input:focus,
 .modal-content textarea:focus {
-    border-color: #4318d1;
+    border-color: #efd135;
     outline: none;
 }
 
@@ -67,8 +67,8 @@
     width: 100%;
     padding: 14px;
     margin-top: 15px;
-    background-color: #4318d1;
-    color: white;
+    background-color: #efd135;
+    color: #000;
     font-weight: bold;
     border: none;
     border-radius: 8px;
@@ -77,20 +77,19 @@
 }
 
 .modal-content button:hover {
-    background-color: #250e7e;
+    background-color: #bda21d;
 }
 
 .close-btn {
-    background-color: transparent;
-    color: #4318d1;
+    background-color: #efd135;
+    color: #000;
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .close-btn:hover {
-    background-color: #4318d1;
-    color: white;
+    background-color: #bda21d;
 }
 
 .successBox {

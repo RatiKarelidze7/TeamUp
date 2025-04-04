@@ -84,13 +84,14 @@ const Navbar = () => {
                 <button className={classes["profile-btn"]} onClick={dropDownHandler}>
                     <div>
                         <img src={profileImg} className={classes["profile-pic"]} alt="Profile" />
-                        <h3>{userName}</h3>
+                        <h3 className={classes["active"]}>{userName}</h3>
                     </div>
                 </button>
 
 
                 {profileMenu && (
                     <ul className={classes["dropdown-menu"]}>
+                        <li className={classes["user-li"]}><a className={classes["user"]}>{userName}</a></li>
                         <li><a onClick={() => navigate("/profile")}>Profile</a></li>
                         <li><a onClick={() => navigate("/Messenger")}>Messenger</a></li>
                         <li><a onClick={() => navigate("/Request")}>Requests</a></li>

@@ -17,6 +17,10 @@
     display: grid;
     width: 600px;
 
+    @media screen and (max-width: 431px) {
+      width: 300px;
+    }
+
     p {
       color: #666666;
       @media screen and (max-width: 431px) {
@@ -37,6 +41,8 @@
     .result-side {
       display: flex;
       gap: 50px;
+      max-width: 150px;
+      
 
       @media screen and (max-width: 431px) {
         display: grid;

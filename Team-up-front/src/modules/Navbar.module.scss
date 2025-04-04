@@ -66,6 +66,11 @@ nav {
         h3 {
           font-weight: 550;
           color: #fff;
+
+          @media screen and (max-width: 768px) {
+            display: none;
+            
+          }
         }
       }
     }
@@ -84,6 +89,24 @@ nav {
       margin: 0;
       right: 0;
       transform: translate(-50px, 130px);
+
+      .user {
+        color: #000;
+        border-bottom: 1px solid #000;
+        display: none;
+
+        @media screen and (max-width: 768px) {
+          display: flex;
+        }
+      }
+
+      .user-li {
+        display: none;
+
+        @media screen and (max-width: 768px) {
+          display: flex;
+        }
+      }
       
       li {
         padding: 8px 12px;
@@ -146,7 +169,7 @@ nav {
       display: block;
       width: 25px;
       height: 3px;
-      background-color: #4318d1;
+      background-color: #fff;
       transition: all 0.3s ease;
     }
   }
@@ -160,20 +183,18 @@ nav {
     }
 
     .nav-links {
-      display: none;
+      display: flex;
       position: absolute;
       top: 72px;
       left: 0;
       width: 100%;
+      color: black;
       background-color: white;
       flex-direction: column;
       padding: 20px;
       gap: 15px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
-      &.active {
-        display: flex;
-      }
 
       li {
         width: 100%;
