@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 import { io } from "socket.io-client";
 import classes from "../../../modules/Messenger/Messages.module.scss";
 import profilePicture from "../../../assets/Home-page-pics/profile-pic.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 const Messages = ({ selectedConversation }) => {
   const [message, setMessage] = useState("");
@@ -130,7 +132,7 @@ const handleSendMessage = () => {
         {selectedConversation ? (
           <div className={classes["messages-tab"]}>
             <div className={classes["user-chat"]}>
-              <img src={profilePicture} alt="Profile" />
+              <FontAwesomeIcon icon={faUser} className={classes["profile-icon"]} />
               <h1>{selectedConversation.isGroup ? selectedConversation.groupName : selectedConversation.name}</h1>
             </div>
             <br />

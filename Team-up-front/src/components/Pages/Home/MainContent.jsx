@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { getRequest, postRequest } from "../../../utils/api.js"
 import { useNavigate } from "react-router-dom";
 import classes from "../../../modules/MainContent.module.scss"
+import mainContentPic from "../../../assets/Home-page-pics/mainPic.png"
 
 const MainContent = () => {
     const navigate = useNavigate();
@@ -31,14 +32,11 @@ const MainContent = () => {
             <div className={classes["main-container"]}>
                 <div className={classes["left-side"]}>
                     <div className={classes["content-wrapper"]}>
-                        <h1 className={classes["center-text"]}>Connect with top developers and clients worldwide</h1>
+                        <h1 className={classes["center-text"]}>Connect with <mark>top</mark> developers and clients worldwide</h1>
                         <p className={classes["center-text"]}>
-                            Lorem Ipsum is simply dummy
-                            text of the printing and
-                            typesetting industry. Lorem Ipsum
-                            has been the industry's standard dummy
-                            text ever since the 1500s
-                            and best site ever you can see
+                        In today's fast-paced digital landscape, 
+                        building meaningful connections with top developers 
+                        and clients worldwide is essential for success.
                         </p>
                         <br />
                         <div className={classes["two-btn"]}>
@@ -66,7 +64,9 @@ const MainContent = () => {
                 </div>
 
                 <div className={classes["right-side"]}>
-                    <div className={classes["right-side_img"]}></div>
+                    <div className={classes["right-side_img"]}>
+                        <img src={mainContentPic}/>
+                    </div>
                 </div>
             </div>
         </>

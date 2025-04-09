@@ -4,6 +4,8 @@ import classes from "../../../modules/Messenger/UserMessages.module.scss";
 import NavBar from "../../Main/Navbar.jsx";
 import Messages from "./Messages.jsx";
 import userProfile from "../../../assets/Home-page-pics/profile-pic.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 const UserMessages = () => {
   const [usersData, setUsersData] = useState([]);
@@ -115,7 +117,7 @@ const UserMessages = () => {
                   }`}
                   onClick={() => handleSelectConversation(conversation)}
                 >
-                  <img src={userProfile} alt="User profile" />
+                  <FontAwesomeIcon icon={faUser} className={classes["profile-icon"]} />
                   <div>
                     <h3>{conversation.isGroup ? conversation.groupName : conversation.name}</h3>
                     <div className={classes["price-range"]}>

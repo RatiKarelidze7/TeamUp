@@ -9,16 +9,18 @@
   }
 }
 
-@media (max-width: 768px) {
-  .no-chat-selected {
-    margin-top: 30px;
+.no-chat-selected {
+  margin-left: 13px;
+
+  @media (max-width: 768px) {
+      margin-top: 30px;
   }
 }
 
 .burger-menu {
   display: none;
   position: absolute;
-  top: 0px;
+  top: 10px;
   left: 20px;
   z-index: 100;
   cursor: pointer;
@@ -32,7 +34,7 @@
       display: block;
       width: 25px;
       height: 3px;
-      background-color: #333;
+      background-color: #bda21d;
       transition: all 0.3s ease;
     }
 
@@ -54,7 +56,7 @@
 
 .sidebar {
   width: 280px;
-  background: #f8f8f8;
+  background: #fffaec;
   padding: 20px;
   border-right: 1px solid #ddd;
   transition: transform 0.3s ease;
@@ -95,8 +97,8 @@
     transition: border 0.3s ease-in-out;
 
     &:focus {
-      border-color: #4f46e5;
-      box-shadow: 0 0 10px rgba(79, 70, 229, 0.3);
+      border-color: #efd135;
+      box-shadow: 0 0 10px #bda21d;
     }
   }
 }
@@ -153,10 +155,14 @@
       background-color: #e7e7e7;
     }
 
-    img {
-      width: 3rem;
-      height: 3rem;
+    .profile-icon {
+      background-size: cover;
+      height: 25px;
+      width: 25px;
       border-radius: 50%;
+      color: white;
+      background-color: #000;
+      padding: 7px;
     }
 
     p {

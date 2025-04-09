@@ -6,6 +6,8 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 const FeaturedProjects = () => {
     // Create a reusable project card component
@@ -24,10 +26,10 @@ const FeaturedProjects = () => {
                 <br/>
                 <div className={classes["client-side"]}>
                     <div>
-                        <img className={classes["client-profile"]} src={clientProfile} alt="Client"/>
+                        <FontAwesomeIcon icon={faUser} className={classes["client-profile"]} />
                         <p>Client Name</p>
                     </div>
-                    <h5>$1,000</h5>
+                    <h5>$1,549</h5>
                 </div>
             </div>
         </div>
@@ -42,7 +44,6 @@ const FeaturedProjects = () => {
                 {/* Desktop Grid View */}
                 <div className={classes['desktop-view']}>
                     <div className={classes['projects-grid']}>
-                        <ProjectCard />
                         <ProjectCard />
                         <ProjectCard />
                         <ProjectCard />

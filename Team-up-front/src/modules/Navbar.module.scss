@@ -140,11 +140,14 @@ nav {
     background-color: #250e7e;
   }
 
-  .profile-pic {
+  .profile-icon {
     background-size: cover;
-    height: 40px;
-    width: 40px;
+    height: 25px;
+    width: 25px;
     border-radius: 50%;
+    color: white;
+    background-color: #000;
+    padding: 7px;
   }
 
   .nav-left {
@@ -157,6 +160,8 @@ nav {
     display: flex;
     align-items: center;
     gap: 20px;
+
+    
   }
 
   .hamburger {

@@ -4,6 +4,8 @@ import profileImg from "../../assets/Home-page-pics/profile-pic.jpg";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import logo from "../../assets/teamup-logo.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
     const [profileMenu, setProfileMenu] = useState(false);
@@ -67,11 +69,6 @@ const Navbar = () => {
         <nav>
             <div className={classes["nav-left"]}>
                     <img src={logo} className={classes["nav-logo"]}/>
-                <div className={classes["hamburger"]} onClick={toggleMobileMenu}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
                 <ul className={`${classes["nav-links"]} ${mobileMenu ? classes["active"] : ""}`}>
                     <li onClick={() => navigate('/')}>Home</li>
                     <li onClick={() => navigate('/FindDevelopers')}>Find Developers</li>
@@ -83,7 +80,7 @@ const Navbar = () => {
             <div className={classes["nav-right"]}>
                 <button className={classes["profile-btn"]} onClick={dropDownHandler}>
                     <div>
-                        <img src={profileImg} className={classes["profile-pic"]} alt="Profile" />
+                        <FontAwesomeIcon icon={faUser} className={classes["profile-icon"]} />
                         <h3 className={classes["active"]}>{userName}</h3>
                     </div>
                 </button>
@@ -104,6 +101,12 @@ const Navbar = () => {
                         )}
                     </ul>
                 )}
+
+                <div className={classes["hamburger"]} onClick={toggleMobileMenu}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </nav>
     );
