@@ -22,9 +22,9 @@ const FeaturedProjects = () => {
         alt="Project"
       />
       <div className={classes["project-description"]}>
-        <h4>NimbusNest</h4>
+        <h4>DevNest</h4>
         <p>
-          A smart home startup offering an AI-powered central hub.
+           DevNest connects developers and clients in one seamless platform.
         </p>
         <br />
         <div className={classes["client-side"]}>
@@ -49,9 +49,9 @@ const FeaturedProjects = () => {
         alt="Project"
       />
       <div className={classes["project-description"]}>
-        <h4>GreenByte</h4>
+        <h4>LaunchPad Pro</h4>
         <p>
-          An eco-tech company focused on reducing carbon footprints.
+            LaunchPad Pro empowers startups and freelancers to thrive.
         </p>
         <br />
         <div className={classes["client-side"]}>
@@ -76,9 +76,9 @@ const FeaturedProjects = () => {
         alt="Project"
       />
       <div className={classes["project-description"]}>
-        <h4>SnackLoop</h4>
+        <h4>SwiftCollab</h4>
         <p>
-          A subscription-based platform delivering healthy.
+            SwiftCollab streamlines teamwork with powerful collaboration tools.
         </p>
         <br />
         <div className={classes["client-side"]}>
@@ -103,9 +103,9 @@ const FeaturedProjects = () => {
         alt="Project"
       />
       <div className={classes["project-description"]}>
-        <h4>SkillSprout</h4>
+        <h4>PixelSync</h4>
         <p>
-          An ed-tech platform that connects learners with bite-sized.
+            PixelSync fuses sleek design with dev power.
         </p>
         <br />
         <div className={classes["client-side"]}>

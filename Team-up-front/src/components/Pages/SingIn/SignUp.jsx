@@ -140,59 +140,6 @@ const SignUp = () => {
   };
   
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-    
-  //   const isEmailValid = await handleEmailCheck();
-  //   if (!isEmailValid) return;
-    
-  //   const isPasswordValid = validatePasswords();
-  //   if (!isPasswordValid) return;
-
-  //   const user = {
-  //     name,
-  //     email,
-  //     password,
-  //     selectedRole,
-  //     ...(selectedRole === 'developer' ? {
-  //       selectedExperience: selectedExperiences,
-  //       experienceYears,
-  //       selectedStatus,
-  //       priceRange,
-  //     } : {
-  //       selectedStatus,
-  //       selectedFocus,
-  //       projectStyle,
-  //       priceRange,
-  //     })
-  //   };
-
-  //   try {
-  //     console.log('Sending POST request to create user');
-  //     const response = await axios.post('http://localhost:5005/users', user);
-
-  //     if (response.data.success) {
-  //       setName('');
-  //       setEmail('');
-  //       setPassword('');
-  //       setConfirmPassword('');
-  //       setSelectedRole(null);
-  //       setSelectedStatus("company");
-  //       setPriceRange(0);
-  //       setErrorMessage(''); 
-
-  //       localStorage.setItem('userName', response.data.user.name);
-  //       localStorage.setItem('selectedRole', response.data.user.selectedRole);
-  //       navigate("/");
-  //     } else {
-  //       setErrorMessage('Failed to create user');
-  //     }
-  //   } catch (error) {
-  //     console.error("Error creating user:", error);
-  //     setErrorMessage('Error creating user');
-  //   }
-  // };
-
   const handleRoleChange = (role) => {
     setSelectedRole(role === selectedRole ? null : role);
     setRoleSelected(true);

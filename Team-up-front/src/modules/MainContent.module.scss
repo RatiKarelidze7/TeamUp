@@ -5,8 +5,10 @@
   margin-left: 52px;
   margin-right: 52px;
   padding: 50px 0px;
-  gap: 150px;
+  gap: 180px;
   margin-top:70px;
+
+  
 
   @media screen and (max-width: 431px) {
     max-width: 58dvh;
@@ -53,7 +55,7 @@
     .result-side {
       display: flex;
       gap: 50px;
-      max-width: 70dvh;
+      max-width: 80dvh;
       
 
       @media screen and (max-width: 431px) {
@@ -69,10 +71,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
         background-color: #F0CD3B;
-        border: 1px solid black;
         padding: 7px;
         border-radius: 8px;
+        -webkit-box-shadow: 3px 3px 33px 0px rgba(179,179,179,1);
+          -moz-box-shadow: 3px 3px 33px 0px rgba(179,179,179,1);
+          box-shadow: 3px 3px 33px 0px rgba(179,179,179,1);
 
         @media screen and (max-width: 431px) {
           display: flex;

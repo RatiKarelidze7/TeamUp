@@ -48,15 +48,15 @@ const MainContent = () => {
                         <br /><br />
                         <div className={classes["result-side"]}>
                             <div>
-                                <h2>6K+</h2>
+                                <h2>55+</h2>
                                 <p className={classes["p"]}>Active Developers</p>
                             </div>
                             <div>
-                                <h2>5k+</h2>
+                                <h2>10+</h2>
                                 <p className={classes["p"]}>Projects Completed</p>
                             </div>
                             <div>
-                                <h2>8k+</h2>
+                                <h2>8+</h2>
                                 <p className={classes["p"]}>Happy Clients</p>
                             </div>
                         </div>
